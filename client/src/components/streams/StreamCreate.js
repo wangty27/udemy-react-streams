@@ -55,7 +55,7 @@ const validate = formValues => {
   return errors;
 };
 
-const mapStateToProps = () => {};
+const mapStateToProps = () => {return {replace: 'me'}};
 
 export default connect(
   mapStateToProps,
