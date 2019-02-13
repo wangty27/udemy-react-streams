@@ -27,7 +27,7 @@ export const createStream = formValues => async dispatch => {
 
   dispatch({
     type: ACTION_CREATE_STREAM,
-    payload: response
+    payload: response.data
   });
 };
 
@@ -36,7 +36,7 @@ export const fetchStreams = () => async dispatch => {
 
   dispatch({
     type: ACTION_FETCH_STREAMS,
-    payload: response
+    payload: response.data
   });
 }
 
@@ -45,7 +45,7 @@ export const fetchStream = id => async dispatch => {
 
   dispatch({
     type: ACTION_FETCH_STREAM,
-    payload: response
+    payload: response.data
   });
 }
 
@@ -54,7 +54,7 @@ export const editStream = (id, formValues) => async dispatch => {
 
   dispatch({
     type: ACTION_EDIT_STREAM,
-    payload: response
+    payload: response.data
   });
 }
 
